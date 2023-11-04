@@ -23,6 +23,7 @@ a:hover {
 
 .switch{
 	flex:1;
+	display:flex;
 	justify-content:center;
 	max-width:12.5%;
 	margin-left:50%;
@@ -37,6 +38,13 @@ a:hover {
 	border-radius: 4px;
 }
 
+.onSide{
+	flex:1;
+}
+
+.offSide{
+	flex:1;
+}
 
 .inactive {
 	background-color: darkgreen;
