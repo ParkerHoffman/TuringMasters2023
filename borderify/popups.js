@@ -33,9 +33,10 @@ var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length)
 alert(functionalCommentArray[ranCommentNum]);
 console.log(commentArray)
 console.log(functionalCommentArray)
-if (functionalCommentArray.length != 0) {
+if (functionalCommentArray.length != 1) {
     functionalCommentArray.splice(ranCommentNum, 1);
 } else {
+    functionalCommentArray.pop();
     functionalCommentArray = commentArray.slice();
 }
     
