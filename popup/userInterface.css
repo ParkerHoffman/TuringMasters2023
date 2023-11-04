@@ -8,11 +8,18 @@ body{
 }
 
 .header{
+	background-color:#E3E3E3;
 	display:flex;
 	flex:1;
 	flex-direction:row;
 	justify-content: center;
 	
+}
+
+
+.text{
+	margin-left:100px;
+	color:#212624
 }
 
 .mainBody{
@@ -21,16 +28,16 @@ body{
 }
 .right{
 	justify-content:center;
-	flex: 1.5;
-	background-color: green;
+	flex: 1;
+	background-color:#A8DCB7;
 	display: flex;
 	flex-direction: column;
 }
 
 .left{
 	flex:1;
-	background-color: powderblue;
-	color: navy-blue;
+	background-color:#7DC0CB;
+	color:#026C7C;
 }
 
 a:hover {
@@ -45,7 +52,7 @@ a:hover {
 	max-width:12.5%;
 	margin-left:50%;
 	border-style: solid;
-	border-color:black;
+	border-color:#212624;
 	border-width:1px;
 	border-radius:4px;
 }
@@ -56,14 +63,10 @@ a:hover {
 }
 
 .inactive {
-	background-color: darkgreen;
-	color: black;
+	color:#212624;
 }
 
-.active{
-	background-color: lightgreen;
-	color: black;
-}
+
 
 .stats{
 	flex:1;
@@ -77,8 +80,8 @@ a:hover {
 .timeOnSite{
 	flex:1;
 	text-align:center;
-	background-color: lightgreen;
-	color: dark-green;
+	background-color:#A8DCB7;
+	color:#212624;
 
 }
 
@@ -90,39 +93,44 @@ img{
 .popupNum{
 	flex:1;
 	text-align:center;
-	background-color: lightgreen;
-	color: dark-green;
+	background-color:#A8DCB7;
+	color:#212624;
 }
 
 .settings{
-	color: lightgreen;
+	color:#212624;
 }
 
 .sitesList{
-	color: lightgreen;
+	color:#212624;
 }
 
 .numSites{
-	background-color: powderblue;
-	color: navy-blue;
+	background-color:#7DC0CB;
+	color:#026C7C;
 }
 
 .dots{
-	color: lightgreen;
+	color:A8DCB7;
 }
 
 .menu{
-	background-color: powderblue;
-	color: navy-blue;
+	background-color:#7DC0CB;
+	color:#026C7C;
 }
 
 .alertTime{
-	color: lightgreen;
+	color:#212624;
 }
 
 .userTime{
-	background-color: powderblue;
-	color: navy-blue;
+	background-color:#7DC0CB;
+	color:#026C7C;
+}
+
+.active{
+	background-color:#E3E3E3;
+	color:#212624;
 }
 
 .hide{
