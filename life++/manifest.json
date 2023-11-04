@@ -21,6 +21,12 @@
       "default_title": "Life++",
       "default_popup": "popup/userInterface.html",
       "show_matches":  ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"]
+ },
+
+ "browser_specific_settings": {
+    "gecko": {
+      "id": "life++Extension"
+    }
  }
 
 }
