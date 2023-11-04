@@ -39,7 +39,7 @@ $(document).ready(function(){
 	//Click Listener
 	
 	$('body').on('click', '.tabActive', (e) => {
-		console.log("It worked")
+		console.log("It worked");
 		
 		if(tabToggle){
 			$('.sites').addClass('tabActive');
