@@ -18,9 +18,15 @@ $(document).ready(function(){
 		if(switchToggle){
 			$('.onButton').addClass('active');
 			$('.offButton').removeClass('active');
+			browser.storage.sync.set({
+				buttonOn: true
+			});
 		} else{
 			$('.onButton').removeClass('active');
 			$('.offButton').addClass('active');
+			browser.storage.sync.set({
+				buttonOn: false
+			});
 		}
 		
 		switchToggle = !switchToggle;
