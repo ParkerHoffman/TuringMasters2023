@@ -5,13 +5,14 @@ body{
 .popUp{
 	display:flex;
 	flex-direction:column;
-	justify-content: center;
 }
 
 .header{
 	display:flex;
 	flex:1;
 	flex-direction:row;
+	justify-content: center;
+	
 }
 
 .mainBody{
