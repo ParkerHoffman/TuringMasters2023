@@ -6,12 +6,12 @@
   "description": "Adds a red border to all webpages matching mozilla.org.",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/TigerHacks2023_Icon.png.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*"],
+      "matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"],
       "js": ["borderify.js"]
     }
   ]

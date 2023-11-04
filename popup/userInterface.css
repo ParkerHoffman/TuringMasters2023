@@ -24,7 +24,12 @@ a:hover {
 .switch{
 	flex:1;
 	justify-content:center;
+	max-width:12.5%;
 	margin-left:50%;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	border-radius:4px;
 }
 
 .onButton, offButton{
@@ -60,12 +65,16 @@ a:hover {
 
 }
 
+img{
+	max-height:50%;
+	max-width: 50%;
+}
+
 .popupNum{
 	flex:1;
 	text-align:center;
 	background-color: lightgreen;
 	color: dark-green;
-
 }
 
 .settings{
