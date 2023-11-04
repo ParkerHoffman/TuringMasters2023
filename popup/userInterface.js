@@ -26,8 +26,10 @@ $(document).ready(function(){
 		
 		console.log(switchToggle);
 		
-		
-		
-		
 	} )
+	
+	//Add more code after this
+	
+	
+	
 })
