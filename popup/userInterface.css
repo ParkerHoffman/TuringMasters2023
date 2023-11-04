@@ -54,7 +54,7 @@ a:hover {
 
 .timeOnSite{
 	flex:1;
-	align-self:center;
+	text-align:center;
 	background-color: lightgreen;
 	color: dark-green;
 
@@ -62,7 +62,7 @@ a:hover {
 
 .popupNum{
 	flex:1;
-	align-self:center;
+	text-align:center;
 	background-color: lightgreen;
 	color: dark-green;
 
