@@ -12,7 +12,7 @@ body{
 	display:flex;
 	flex:1;
 	flex-direction:row;
-	justify-content: center;
+	justify-content:space-between;
 	
 }
 
@@ -73,18 +73,13 @@ body{
 	margin-top:8px;
 }
 
-.bullet{
-	flex:1;
-	max-height:50%;
-	max-width:50%;
+.delete{
+	height:50px;
+	width:50px;
 }
 
 .listElement{
 	flex:3;
-}
-
-.delete{
-	flex:1;
 }
 
 .inputBox{
@@ -108,11 +103,12 @@ a:hover {
 }
 
 .switch{
-	flex:1;
+	flex:3;
 	display:flex;
 	justify-content:center;
-	max-width:12.5%;
-	margin-left:50%;
+	max-width:40%;
+	margin-left:30%;
+	margin-right:25%;
 	border-style: solid;
 	border-color:#212624;
 	border-width:1px;

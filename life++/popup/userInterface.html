@@ -23,7 +23,7 @@
 
 	<div class="mainBody">
 	
-		<div class="left">
+		<div class="left hide">
 			<div class="tabs">
 				<a class="sites tabInactive">Sites</a>
 				<a class="messages tabActive">Messages</a>
@@ -34,11 +34,10 @@
 						<tr>
 							<th>Site Name/Message</th>
 							<th>
-								<img scr="../icons/delete.png">
+								<img scr="../icons/delete.png" class="delete">
 							</th>
 						</tr>
 					</table>
-					<img class="delete" scr="../icons/delete.png">
 				</div>
 			</div>
 			<div class="inputBox">input text</div>
@@ -50,14 +49,14 @@
 				<a class="offButton active">Off</a>
 			</div>
 		
-			<div class="stats">
+			<div class="stats hide">
 		
-				<div class="timeOnSite" style="align-self: left">
+				<div class="timeOnSite hide" style="align-self: left">
 					<img src="../icons/timeIcon.png"/>
 					<div ">Time on site: <span class="time">0</span> minutes</div>
 				</div>
 		
-				<div class="popupNum" style="align-self: right">
+				<div class="popupNum hide" style="align-self: right">
 					<img src="../icons/notifIcon.png">
 					<div>Popups Issued: <span class="popupsIssued"></span></div>
 				</div>
