@@ -63,6 +63,10 @@ const sweetAlertScript = document.createElement('script');
 sweetAlertScript.src = 'https://unpkg.com/sweetalert/dist/sweetalert.min.js'; // Replace 'path/to/sweetalert2.js' with the actual path// Append the <script> tag to the head of the page
 document.head.appendChild(sweetAlertScript);
 
+//const sweetAlertStyle = document.createElement('style');
+//sweetAlertStyle.innerHTML = '.swal-display{background-color: rgba(43, 165, 137, 0.45);}';
+//document.body.appendChild(sweetAlertStyle);
+
 const sweetAlertUses = document.createElement('script');
 sweetAlertUses.innerHTML = ''+
     'const commentArray = [ '+
@@ -74,8 +78,7 @@ sweetAlertUses.innerHTML = ''+
     'var functionalCommentArray = commentArray.slice(); '+
     'setInterval(function() { ' +
     'var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length); '+
-    'swal(functionalCommentArray[ranCommentNum]); '+
-
+    'swal("Hey Friend,", functionalCommentArray[ranCommentNum], "info", {closeOnClickOutside: false, closeOnEsc: false,}); '+
     'if (functionalCommentArray.length != 1) { '+
     '    functionalCommentArray.splice(ranCommentNum, 1); '+
     '} else { '+
