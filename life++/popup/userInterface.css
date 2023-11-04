@@ -95,6 +95,17 @@ body{
 	flex-direction: column;
 }
 
+.powerButton{
+	flex: 5;
+	display: flex;
+	justify-content: center;
+}
+
+.buttonOn, .buttonOff{
+	flex: 1;
+	height:100px;
+	width:100px;
+}
 
 
 a:hover {

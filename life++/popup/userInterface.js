@@ -1,6 +1,7 @@
 // Insert vars
 var switchToggle = false;
 var tabToggle = false;
+var buttonToggle = false;
 
 
 $(document).ready(function(){
@@ -62,6 +63,33 @@ $(document).ready(function(){
 		}
 		
 		tabToggle = !tabToggle;
+		
+//		console.log(tabToggle);
+		
+		
+		
+		
+	} )
+})
+
+
+$(document).ready(function(){
+	
+	
+	//Click Listener
+	
+	$('body').on('click', '.powerButton', (e) => {
+		console.log("It worked");
+		
+		if(buttonToggle){
+			$('.buttonOff').addClass('hide');
+			$('.buttonOn').removeClass('hide');
+		} else{
+			$('.buttonOff').removeClass('hide');
+			$('.buttonOn').addClass('hide');
+		}
+		
+		buttonToggle = !buttonToggle;
 		
 //		console.log(tabToggle);
 		
