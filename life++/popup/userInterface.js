@@ -7,12 +7,12 @@ var tabToggle = false;
 $(document).ready(function(){
 
 	async function testpull() {
-		let onBool = await storage.sync.get('buttonOn');
+		let onBool = await browser.storage.sync.get('buttonOn');
 		console.log(onBool);
 	}
 
 	async function testpush(bool) {
-		await storage.sync.set({
+		await browser.storage.sync.set({
 			buttonOn: bool
 		});
 	}
@@ -35,7 +35,7 @@ $(document).ready(function(){
 		
 		switchToggle = !switchToggle;
 		
-		console.log(switchToggle);
+//		console.log(switchToggle);
 //		let onBool = browser.storage.managed.get('buttonOn');
 //		console.log(onBool);
 		testpull();
@@ -64,7 +64,7 @@ $(document).ready(function(){
 		
 		tabToggle = !tabToggle;
 		
-		console.log(tabToggle);
+//		console.log(tabToggle);
 		
 		
 		
