@@ -39,16 +39,27 @@ body{
 	display:flex;
 	flex:1;
 	justify-content:center;
+	background-color:#026C7C;
 }
 
-.sites{
+
+
+
+
+.sites, .messages{
 	flex:1;
 	margin-left:5px;
+	border-style: solid;
+	border-color:#212624;
+	border-width:1px;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	color:#212624;
+	background-color:#7DC0CB;
 }
 
-.messages{
-	flex:1;
-	margin-left:5px;
+.tabActive{
+	background-color:#E3E3E3;
 }
 
 .list{
@@ -77,6 +88,7 @@ body{
 
 .inputBox{
 	flex:1;
+	background-color:#E3E3E3;
 }
 
 .right{
