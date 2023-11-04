@@ -65,7 +65,25 @@ document.head.appendChild(sweetAlertScript);
 
 const sweetAlertUses = document.createElement('script');
 sweetAlertUses.src = 'commentAlert.js'
-sweetAlertUses.innerHTML = 'setInterval(commentAlert, 4000);';
+sweetAlertUses.innerHTML = 'setInterval(function() { '+
+    'const commentArray = [ '+
+        '"Have you done any exercise recently?", '+
+        '"Maybe you should call a relative.", '+
+        '"How\'s your grandma doing? Have you talked to her in a while?", '+
+        '"Your grandpa might enjoy hearing your voice again." '+
+    ']; '+
+    'var functionalCommentArray = commentArray.slice(); '+
+    'var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length) '+
+    'swal(functionalCommentArray[ranCommentNum]); '+
+
+    'if (functionalCommentArray.length != 1) { '+
+    '    functionalCommentArray.splice(ranCommentNum, 1); '+
+    '} else { '+
+    '    functionalCommentArray.pop(); '+
+    '    functionalCommentArray = commentArray.slice(); '+
+    '} '+
+
+'}, 4000);';
 document.body.appendChild(sweetAlertUses);
 
 
