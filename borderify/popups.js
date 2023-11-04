@@ -40,17 +40,6 @@ var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 // Display the result in the element with id="demo"
 alert(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
 */
-var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length)
-alert(functionalCommentArray[ranCommentNum]);
-console.log(commentArray)
-console.log(functionalCommentArray)
-if (functionalCommentArray.length != 1) {
-    functionalCommentArray.splice(ranCommentNum, 1);
-} else {
-    functionalCommentArray.pop();
-    functionalCommentArray = commentArray.slice();
-}
-
     var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length)
     swal(functionalCommentArray[ranCommentNum]);
     //console.log(commentArray)
@@ -66,7 +55,7 @@ if (functionalCommentArray.length != 1) {
 
 //setTimeout(function() {window.alert("Help");},10000);
 
-setInterval(myFunction, 3000);
+//setInterval(myFunction, 3000);
 //setInterval(myFunction, 3000);
 
 // contentScript.js (example content script file)// Create a new <script> element
@@ -75,6 +64,7 @@ sweetAlertScript.src = 'https://unpkg.com/sweetalert/dist/sweetalert.min.js'; //
 document.head.appendChild(sweetAlertScript);
 
 const sweetAlertUses = document.createElement('script');
+sweetAlertUses.src = 'commentAlert.js'
 sweetAlertUses.innerHTML = 'setInterval(commentAlert, 4000);';
 document.body.appendChild(sweetAlertUses);
 
