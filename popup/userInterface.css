@@ -2,6 +2,22 @@ body{
 	display: flex;
 }
 
+.popUp{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+.header{
+	display:flex;
+	flex:1;
+	flex-direction:row;
+}
+
+.mainBody{
+	display:flex;
+	flex:5;
+}
 .right{
 	justify-content:center;
 	flex: 1.5;
