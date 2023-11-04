@@ -10,12 +10,17 @@ $(document).ready(function(){
 	
 	//Click Listener
 	
-	$('body').on('click', '.switch .button.on', (e) => {
+	$('body').on('click', '.switch .button.active', (e) => {
 		console.log("It worked");
 		
-		$('.off').addClass('on');
-		$('.off').removeClass('off');
-		$(e.currentTarget).addClass('on');
+		$('.inactive').addClass('active');
+		$('.inactive').removeClass('inactive');
+		$(this).removeClass('active');
+		$(this).addClass('inactive');
+		
+		switchToggle = !switchToggle;
+		
+		console.log(switchToggle);
 		
 		
 		
