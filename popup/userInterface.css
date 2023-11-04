@@ -1,61 +1,68 @@
+body{
+	display: flex;
+}
+
 .right{
-	background-color: dark-green;
+	flex: 1;
+	background-color: darkgreen;
+	display: flex;
 }
 
 .left{
-	background-color: powder-blue;
+	flex:1;
+	background-color: powderblue;
 	color: navy-blue;
 }
 
 
 .on{
-	background-color: light-green;
+	background-color: lightgreen;
 	color: black;
 }
 
 .off{
-	background-color: dark-green;
+	background-color: darkgreen;
 	color: black;
 }
 
 .timeOnSite{
-	background-color: light-green;
+	background-color: lightgreen;
 	color: dark-green;
 }
 
 .popupNum{
-	background-color: light-green;
+	background-color: lightgreen;
 	color: dark-green;
 }
 
 .settings{
-	color: light-green;
+	color: lightgreen;
 }
 
 .sitesList{
-	color: light-green;
+	color: lightgreen;
 }
 
 .numSites{
-	background-color: powder-blue;
+	background-color: powderblue;
 	color: navy-blue;
 }
 
 .dots{
-	color: light-green;
+	color: lightgreen;
 }
 
 .menu{
-	background-color: powder-blue;
+	background-color: powderblue;
 	color: navy-blue;
 }
 
 .alertTime{
-	color: light-green;
+	color: lightgreen;
 }
 
 .hrsAndMins{
-	background-color: powder-blue;
+	background-color: powderblue;
 	color: navy-blue;
 }
 
