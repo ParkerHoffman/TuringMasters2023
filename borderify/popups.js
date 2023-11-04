@@ -12,7 +12,7 @@ var functionalCommentArray = commentArray.slice();
 
 function myFunction() {
 
-*/
+
 function commentAlert() {
     const commentArray = [
         "Have you done any exercise recently?",
@@ -21,7 +21,7 @@ function commentAlert() {
         "Your grandpa might enjoy hearing your voice again."
     ];
     var functionalCommentArray = commentArray.slice();
-/*
+
     // Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
@@ -39,7 +39,7 @@ var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 // Display the result in the element with id="demo"
 alert(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
-*/
+*//*
     var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length)
     swal(functionalCommentArray[ranCommentNum]);
     //console.log(commentArray)
@@ -52,7 +52,7 @@ alert(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
     }
     
 }
-
+*/
 //setTimeout(function() {window.alert("Help");},10000);
 
 //setInterval(myFunction, 3000);
@@ -64,8 +64,7 @@ sweetAlertScript.src = 'https://unpkg.com/sweetalert/dist/sweetalert.min.js'; //
 document.head.appendChild(sweetAlertScript);
 
 const sweetAlertUses = document.createElement('script');
-sweetAlertUses.src = 'commentAlert.js'
-sweetAlertUses.innerHTML = 'setInterval(function() { '+
+sweetAlertUses.innerHTML = ''+
     'const commentArray = [ '+
         '"Have you done any exercise recently?", '+
         '"Maybe you should call a relative.", '+
@@ -73,7 +72,8 @@ sweetAlertUses.innerHTML = 'setInterval(function() { '+
         '"Your grandpa might enjoy hearing your voice again." '+
     ']; '+
     'var functionalCommentArray = commentArray.slice(); '+
-    'var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length) '+
+    'setInterval(function() { ' +
+    'var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length); '+
     'swal(functionalCommentArray[ranCommentNum]); '+
 
     'if (functionalCommentArray.length != 1) { '+
