@@ -1,3 +1,13 @@
+.right{
+	background-color: dark-green;
+}
+
+.left{
+	background-color: powder-blue;
+	color: navy-blue;
+}
+
+
 .on{
 	background-color: light-green;
 	color: black;
@@ -8,12 +18,12 @@
 	color: black;
 }
 
-.time{
+.timeOnSite{
 	background-color: light-green;
 	color: dark-green;
 }
 
-.notifTimes{
+.popupNum{
 	background-color: light-green;
 	color: dark-green;
 }
