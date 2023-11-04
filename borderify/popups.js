@@ -29,7 +29,7 @@ var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 // Display the result in the element with id="demo"
 alert(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
 */
-var ranCommentNum = Math.floor(Math.random() * commentArray.length)
+var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length)
 alert(functionalCommentArray[ranCommentNum]);
 console.log(commentArray)
 console.log(functionalCommentArray)
