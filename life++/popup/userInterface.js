@@ -1,5 +1,4 @@
 // Insert vars
-//import "..background.js"
 var switchToggle = false;
 var tabToggle = false;
 
