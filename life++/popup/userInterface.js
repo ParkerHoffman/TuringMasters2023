@@ -7,7 +7,7 @@ var tabToggle = false;
 $(document).ready(function(){
 
 	async function testpull() {
-		let onBool = await browser.storage.managed.get('buttonOn');
+		let onBool = await browser.storage.sync.get('buttonOn');
 		console.log(onBool);
 	}
 
