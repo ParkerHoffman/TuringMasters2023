@@ -29,16 +29,19 @@ var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 // Display the result in the element with id="demo"
 alert(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
 */
-var ranCommentNum = Math.floor(Math.random() * commentArray.length)
+var ranCommentNum = Math.floor(Math.random() * functionalCommentArray.length)
 alert(functionalCommentArray[ranCommentNum]);
-if (functionalCommentArray.length != 0) {
+console.log(commentArray)
+console.log(functionalCommentArray)
+if (functionalCommentArray.length != 1) {
     functionalCommentArray.splice(ranCommentNum, 1);
 } else {
+    functionalCommentArray.pop();
     functionalCommentArray = commentArray.slice();
 }
     
 }
 
 //setTimeout(function() {window.alert("Help");},10000);
-setInterval(myFunction, 10000);
+setInterval(myFunction, 3000);
 
