@@ -1,11 +1,11 @@
 // Insert vars
-
+//import "..background.js"
 var switchToggle = false;
 var tabToggle = false;
 
 
 $(document).ready(function(){
-
+/*
 	async function testpull() {
 		let onBool = await browser.storage.sync.get('buttonOn');
 		console.log(onBool);
@@ -16,7 +16,7 @@ $(document).ready(function(){
 			buttonOn: bool
 		});
 	}
-	
+	*/
 	
 	//Click Listener
 	

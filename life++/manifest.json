@@ -20,6 +20,11 @@
     "storage"
   ],
 
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
  "page_action": {
       "default_icon": {
         "16": "icons/TigerHacks2023_Icon16.png",
