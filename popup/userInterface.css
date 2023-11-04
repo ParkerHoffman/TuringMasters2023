@@ -1,0 +1,54 @@
+.on{
+	background-color: light-green;
+	color: black;
+}
+
+.off{
+	background-color: dark-green;
+	color: black;
+}
+
+.time{
+	background-color: light-green;
+	color: dark-green;
+}
+
+.notifTimes{
+	background-color: light-green;
+	color: dark-green;
+}
+
+.settings{
+	color: light-green;
+}
+
+.sitesList{
+	color: light-green;
+}
+
+.numSites{
+	background-color: powder-blue;
+	color: navy-blue;
+}
+
+.dots{
+	color: light-green;
+}
+
+.menu{
+	background-color: powder-blue;
+	color: navy-blue;
+}
+
+.alertTime{
+	color: light-green;
+}
+
+.hrsAndMins{
+	background-color: powder-blue;
+	color: navy-blue;
+}
+
+.hide{
+	display:none;
+}
