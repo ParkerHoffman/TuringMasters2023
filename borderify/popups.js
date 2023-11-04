@@ -31,6 +31,8 @@ alert(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
 */
 var ranCommentNum = Math.floor(Math.random() * commentArray.length)
 alert(functionalCommentArray[ranCommentNum]);
+console.log(commentArray)
+console.log(functionalCommentArray)
 if (functionalCommentArray.length != 0) {
     functionalCommentArray.splice(ranCommentNum, 1);
 } else {
@@ -40,5 +42,5 @@ if (functionalCommentArray.length != 0) {
 }
 
 //setTimeout(function() {window.alert("Help");},10000);
-setInterval(myFunction, 10000);
+setInterval(myFunction, 3000);
 
