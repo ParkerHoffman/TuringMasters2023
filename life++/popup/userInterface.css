@@ -75,7 +75,8 @@ body{
 
 .bullet{
 	flex:1;
-	align-self: left;
+	max-height:50%;
+	max-width:50%;
 }
 
 .listElement{
