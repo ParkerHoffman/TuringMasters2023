@@ -26,6 +26,59 @@ body{
 	display:flex;
 	flex:5;
 }
+
+.left{
+	display:flex;
+	flex:1;
+	flex-direction: column;
+	background-color:#7DC0CB;
+	color:#026C7C;
+}
+
+.tabs{
+	display:flex;
+	flex:1;
+	justify-content:center;
+}
+
+.sites{
+	flex:1;
+	margin-left:5px;
+}
+
+.messages{
+	flex:1;
+	margin-left:5px;
+}
+
+.list{
+	display:flex;
+	flex:5;
+}
+
+.listFormat{
+	flex:1;
+	display:flex;
+	margin-top:8px;
+}
+
+.bullet{
+	flex:1;
+	align-self: left;
+}
+
+.listElement{
+	flex:3;
+}
+
+.delete{
+	flex:1;
+}
+
+.inputBox{
+	flex:1;
+}
+
 .right{
 	justify-content:center;
 	flex: 1;
@@ -34,11 +87,7 @@ body{
 	flex-direction: column;
 }
 
-.left{
-	flex:1;
-	background-color:#7DC0CB;
-	color:#026C7C;
-}
+
 
 a:hover {
 	text-decoration: underline;

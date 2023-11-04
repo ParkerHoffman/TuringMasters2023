@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Life++",
+  "version": "1.0",
+
+  "description": "Encourages users to limit their time scrolling and instead engage in more edifying activities.",
+
+  "icons": {
+    "48": "icons/TigerHacks2023_Icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"],
+      "js": ["popups.js"]
+    }
+  ],
+
+ "browser_action": {
+      "default_icon": "icons/TigerHacks2023_Icon.png",
+      "default_title": "Life++",
+      "default_popup": "popup/userInterface.html"
+ },
+
+ "browser_specific_settings": {
+    "gecko": {
+      "id": "lifePlusPlus@nothing.com"
+    }
+ }
+
+}
