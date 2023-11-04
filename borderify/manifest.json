@@ -1,43 +1,18 @@
-{ 
-
-"manifest_version":2,
-"name": "Life++",
-"version": "1.0",
-
-"description": "Encourages user to get off social media and various other sites",
-
-
-"icons ":{
-	"48": "icons/border-48.png"
-},
-
-
-"permissions": ["activeTab"],
-
-"browser_action": {
-	"default_icon": "icons/beasts-32.png",
-	"default_title": "Life++",
-	"default_popup": "popup/userInterface.html"
-},
-
-"web_accessible_resources": [
-
-"beasts/frog.jpg",
-"beasts/snake.jpg",
-"beasts/turtle.jpg"
-],
-
-
-
-
-
-"content_scripts": [
-
 {
-	"matches": ["*://*.mozilla.org/*"],
-	"js": ["borderify.js"]
-}
-]
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
 
+  "description": "Adds a red border to all webpages matching mozilla.org.",
 
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*"],
+      "js": ["borderify.js"]
+    }
+  ]
 }
