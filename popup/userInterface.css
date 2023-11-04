@@ -19,9 +19,10 @@ a:hover {
 	text-decoration: underline;
 }
 
-.button{
+.onButton, offButton{
 	border-radius: 4px;
 }
+
 
 .inactive {
 	background-color: darkgreen;
