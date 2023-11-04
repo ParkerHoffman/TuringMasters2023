@@ -63,14 +63,10 @@ a:hover {
 }
 
 .inactive {
-	background-color:#5DA271;
 	color:#212624;
 }
 
-.active{
-	background-color:#E3E3E3;
-	color:#212624;
-}
+
 
 .stats{
 	flex:1;
@@ -130,6 +126,11 @@ img{
 .userTime{
 	background-color:#7DC0CB;
 	color:#026C7C;
+}
+
+.active{
+	background-color:#E3E3E3;
+	color:#212624;
 }
 
 .hide{
