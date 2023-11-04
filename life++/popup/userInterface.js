@@ -6,26 +6,39 @@ var tabToggle = false;
 
 $(document).ready(function(){
 
-	
+	async function testpull() {
+		let onBool = await storage.sync.get('buttonOn');
+		console.log(onBool);
+	}
+
+	async function testpush(bool) {
+		await storage.sync.set({
+			buttonOn: bool
+		});
+	}
 	
 	
 	//Click Listener
 	
 	$('body').on('click', '.active', (e) => {
-		console.log("It worked");
 		
 		
 		if(switchToggle){
 			$('.onButton').addClass('active');
 			$('.offButton').removeClass('active');
+			testpush(true);
 		} else{
 			$('.onButton').removeClass('active');
 			$('.offButton').addClass('active');
+			testpush(false);
 		}
 		
 		switchToggle = !switchToggle;
 		
 		console.log(switchToggle);
+//		let onBool = browser.storage.managed.get('buttonOn');
+//		console.log(onBool);
+		testpull();
 		
 		
 		
