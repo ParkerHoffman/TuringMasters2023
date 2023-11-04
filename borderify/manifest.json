@@ -11,7 +11,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*"],
+      "matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"],
       "js": ["borderify.js"]
     }
   ]

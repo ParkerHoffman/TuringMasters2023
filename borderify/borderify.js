@@ -22,5 +22,14 @@ alert(days + "d " + hours + "h "
 }
 
 //setTimeout(function() {window.alert("Help");},10000);
-setInterval(myFunction,10000);
+//setInterval(myFunction,10000);
 
+//body.innerHTML("<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>');
+
+// contentScript.js (example content script file)// Create a new <script> element
+const sweetAlertScript = document.createElement('script');
+sweetAlertScript.src = 'https://unpkg.com/sweetalert/dist/sweetalert.min.js'; // Replace 'path/to/sweetalert2.js' with the actual path// Append the <script> tag to the head of the page
+document.head.appendChild(sweetAlertScript);
+//document.body.appendChild(swal("Hello world!"));
+//setTimeout(swal("Hello world!"),10000);
+swal("Hello world!");
