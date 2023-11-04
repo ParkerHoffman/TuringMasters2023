@@ -3,11 +3,22 @@
 var switchToggle = false;
 
 
-$(document).ready((){
+$(document).ready(function(){
+
+	
+	
 	
 	//Click Listener
 	
-	$(body).on(('click', '.on', (e) => {
+	$('body').on('click', '.switch .button.on', (e) => {
 		console.log("It worked");
-	}
+		
+		$('.off').addClass('on');
+		$('.off').removeClass('off');
+		$(e.currentTarget).addClass('on');
+		
+		
+		
+		
+	} )
 })
