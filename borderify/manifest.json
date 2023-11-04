@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Borderify",
+  "name": "Life++",
   "version": "1.0",
 
-  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "description": "Encourages users to limit their time scrolling and instead engage in more edifying activities.",
 
   "icons": {
-    "48": "icons/TigerHacks2023_Icon.png.png"
+    "48": "icons/TigerHacks2023_Icon.png"
   },
 
   "content_scripts": [
