@@ -16,11 +16,16 @@
     }
   ],
 
- "page_action": {
+ "browser_action": {
       "default_icon": "icons/TigerHacks2023_Icon.png",
       "default_title": "Life++",
-      "default_popup": "popup/userInterface.html",
-      "show_matches":  ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"]
+      "default_popup": "popup/userInterface.html"
+ },
+
+ "browser_specific_settings": {
+    "gecko": {
+      "id": "lifePlusPlus@nothing.com"
+    }
  }
 
 }
