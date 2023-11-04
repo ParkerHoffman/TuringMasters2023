@@ -1,0 +1,130 @@
+body{
+	display: flex;
+}
+
+.popUp{
+	display:flex;
+	flex-direction:column;
+}
+
+.header{
+	display:flex;
+	flex:1;
+	flex-direction:row;
+	justify-content: center;
+	
+}
+
+.mainBody{
+	display:flex;
+	flex:5;
+}
+.right{
+	justify-content:center;
+	flex: 1.5;
+	background-color: green;
+	display: flex;
+	flex-direction: column;
+}
+
+.left{
+	flex:1;
+	background-color: powderblue;
+	color: navy-blue;
+}
+
+a:hover {
+	text-decoration: underline;
+
+}
+
+.switch{
+	flex:1;
+	display:flex;
+	justify-content:center;
+	max-width:12.5%;
+	margin-left:50%;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	border-radius:4px;
+}
+
+.onButton, .offButton{
+	flex:1;
+	border-radius: 4px;
+}
+
+.inactive {
+	background-color: darkgreen;
+	color: black;
+}
+
+.active{
+	background-color: lightgreen;
+	color: black;
+}
+
+.stats{
+	flex:1;
+	flex-wrap: nowrap;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+
+.timeOnSite{
+	flex:1;
+	text-align:center;
+	background-color: lightgreen;
+	color: dark-green;
+
+}
+
+img{
+	max-height:50%;
+	max-width: 50%;
+}
+
+.popupNum{
+	flex:1;
+	text-align:center;
+	background-color: lightgreen;
+	color: dark-green;
+}
+
+.settings{
+	color: lightgreen;
+}
+
+.sitesList{
+	color: lightgreen;
+}
+
+.numSites{
+	background-color: powderblue;
+	color: navy-blue;
+}
+
+.dots{
+	color: lightgreen;
+}
+
+.menu{
+	background-color: powderblue;
+	color: navy-blue;
+}
+
+.alertTime{
+	color: lightgreen;
+}
+
+.userTime{
+	background-color: powderblue;
+	color: navy-blue;
+}
+
+.hide{
+	display:none;
+}
