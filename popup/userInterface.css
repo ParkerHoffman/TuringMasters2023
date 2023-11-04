@@ -4,9 +4,10 @@ body{
 
 .right{
 	justify-content:center;
-	flex: 1;
+	flex: 1.5;
 	background-color: darkgreen;
 	display: flex;
+	flex-direction: column;
 }
 
 .left{
@@ -17,9 +18,17 @@ body{
 
 a:hover {
 	text-decoration: underline;
+
+}
+
+.switch{
+	flex:1;
+	justify-content:center;
+	margin-left:50%;
 }
 
 .onButton, offButton{
+	flex:1;
 	border-radius: 4px;
 }
 
@@ -34,14 +43,29 @@ a:hover {
 	color: black;
 }
 
+.stats{
+	flex:1;
+	flex-wrap: nowrap;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+
 .timeOnSite{
+	flex:1;
+	align-self:center;
 	background-color: lightgreen;
 	color: dark-green;
+
 }
 
 .popupNum{
+	flex:1;
+	align-self:center;
 	background-color: lightgreen;
 	color: dark-green;
+
 }
 
 .settings{
@@ -70,7 +94,7 @@ a:hover {
 	color: lightgreen;
 }
 
-.hrsAndMins{
+.userTime{
 	background-color: powderblue;
 	color: navy-blue;
 }
