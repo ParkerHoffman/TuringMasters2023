@@ -25,10 +25,11 @@ async function testpush(bool) {
 	});
 }
 */
+
 //credit to Craig Otis, https://stackoverflow.com/questions/840088/how-to-load-xml-file-contents-using-javascript
 var xmlHTTP = new XMLHttpRequest();
 try {
-    xmlHTTP.open("GET", "storage.xml", false);
+    xmlHTTP.open("GET", "storage.html", false);
     xmlHTTP.send(null);
 } catch (e) {
     window.alert("Unable to load the requested file.");
@@ -51,7 +52,8 @@ $(document).ready(function(){
 			$('#onOffButton').addClass('on');
 			$('#onOffButton').removeClass('off');
 			//$('#onOffButton').addClass('active');
-			testpush(true);
+			//testpush(true);
+
 		} else{
 			$('#onOffButton').addClass('off');
 			$('#onOffButton').removeClass('on');
