@@ -1,0 +1,24 @@
+{
+	"browser_action": {
+		"browser_style": true,
+		
+	}
+	
+	"description": "Encourages the user to better use their time on other, more productive things other than on things like social media",
+	"manifest_version": 2,
+	"name":"Life++",
+	"homepage_url": "https://github.com/ParkerHoffman/TuringMasters2023",
+	
+	"permissions": [
+	"tabs",
+	"storage",
+	"<all_urls>"
+	],
+	
+	
+	
+	
+	
+	
+	
+}
