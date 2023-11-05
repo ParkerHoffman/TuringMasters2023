@@ -11,7 +11,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"],
+      "matches": ["*://*.facebook.com/*", "*://*.twitter.cpm/*", "*://instagram.com/*", "*://*.youtube.com/*", "*://*.tiktok.com/*"],
       "js": ["popups.js"]
     }
   ],
@@ -23,7 +23,7 @@
     },
     "default_title": "Life++",
     "default_popup": "popup/userInterface.html",
-    "show_matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"]
+    "show_matches": ["*://*.facebook.com/*", "*://*.twitter.cpm/*", "*://instagram.com/*", "*://*.youtube.com/*", "*://*.tiktok.com/*"]
   },
 
   "permissions": [
