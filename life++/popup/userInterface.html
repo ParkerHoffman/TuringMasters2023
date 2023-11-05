@@ -46,9 +46,48 @@
 		</div>
 	
 		<div class="right">
-			<div class="switch">
+<<<<<<< Updated upstream
+			<div class="switch hide">
 				<a class="onButton inactive">On</a>
 				<a class="offButton active">Off</a>
+=======
+			<div>
+				<style>
+				.powerButton{
+					width: 100px;
+					height: 100px;
+					background-image: url('../icons/DarkColoredIcon.png');
+					background-position: center;
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-color: #00000000;
+					border: none;
+					cursor: pointer;
+				}
+				
+				.powerButton.on {
+				
+					background-image: url('../icons/lightColoredIcon.png');
+				}
+				
+				</style>
+				
+				<button class="powerButton" onclick="toggleButton(this)"></button>
+				
+				<script>
+				
+				function toggleButton(e) {
+					
+					if (e.classList.contains('on')) {
+						e.classList.remove('on');
+					} else {
+						e.classList.add('on');
+					}
+				}
+				
+				</script>
+				
+>>>>>>> Stashed changes
 			</div>
 		
 			<div class="stats hide">
