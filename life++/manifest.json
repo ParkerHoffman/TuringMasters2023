@@ -16,6 +16,10 @@
     }
   ],
 
+  "options_ui": {
+    "page": "popup/userInterface.html"
+  },
+
   "permissions": [
     "storage"
   ],
@@ -25,19 +29,9 @@
     "persistent": false
   },
 
- "page_action": {
-      "default_icon": {
-        "16": "icons/TigerHacks2023_Icon16.png",
-        "32": "icons/TigerHacks2023_Icon32.png"
-      },
-      "default_title": "Life++",
-      "default_popup": "popup/userInterface.html",
-      "show_matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"]
- },
-
  "browser_specific_settings": {
     "gecko": {
-      "id": "lifePlusPlus@nothing.com"
+      "id": "14285714-2718-6001-8714-314159265358"
     }
  }
 
