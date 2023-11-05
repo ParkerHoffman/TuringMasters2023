@@ -22,7 +22,7 @@
       "32": "icons/TigerHacks2023_Icon32.png"
     },
     "default_title": "Life++",
-    "default_popup": "userInterface.html",
+    "default_popup": "popup/userInterface.html",
     "show_matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"]
   },
 

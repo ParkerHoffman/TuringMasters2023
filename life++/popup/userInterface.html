@@ -8,7 +8,7 @@
 	
 	<link rel="stylesheet" href = "userInterface.css" />
 	
-	<script src="background.js"></script>
+	<script src="../background.js"></script>
 </head>
 
 
@@ -16,7 +16,7 @@
 
 <div class="popUp">
 	<div class="header">
-		<img class="icon" src="icons/TigerHacks2023_Icon.png"/>
+		<img class="icon" src="../icons/TigerHacks2023_Icon.png"/>
 		<div class="text">Life++</div>
 	</div>
 
@@ -36,7 +36,7 @@
 						<tr>
 							<th>Site Name/Message</th>
 							<th>
-								<img scr="icons/delete.png" class="delete">
+								<img scr="../icons/delete.png" class="delete">
 							</th>
 						</tr>
 					</table>
@@ -51,7 +51,7 @@
 				.powerButton{
 					width: 100px;
 					height: 100px;
-					background-image: url('icons/DarkColoredIcon.png');
+					background-image: url('../icons/DarkColoredIcon.png');
 					background-size: contain;
 					background-position: center;
 					background-repeat: no-repeat;
@@ -62,7 +62,7 @@
 				
 				.powerButton.on {
 				
-					background-image: url('icons/lightColoredIcon.png');
+					background-image: url('../icons/lightColoredIcon.png');
 				}
 				
 				</style>
@@ -75,8 +75,10 @@
 					
 					if (e.classList.contains('on')) {
 						e.classList.remove('on');
+						console.log("Functional!! Turned off");
 					} else {
 						e.classList.add('on');
+						console.log("Functional!! Turned on");
 					}
 				}
 
@@ -91,12 +93,12 @@
 			<div class="stats hide">
 		
 				<div class="timeOnSite hide" style="align-self: left">
-					<img src="icons/timeIcon.png"/>
+					<img src="../icons/timeIcon.png"/>
 					<div>Time on site: <span class="time">0</span> minutes</div>
 				</div>
 		
 				<div class="popupNum hide" style="align-self: right">
-					<img src="icons/notifIcon.png">
+					<img src="../icons/notifIcon.png">
 					<div>Popups Issued: <span class="popupsIssued"></span></div>
 				</div>
 
