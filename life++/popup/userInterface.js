@@ -25,7 +25,7 @@ async function testpush(bool) {
 	});
 }
 */
-
+/*
 //credit to Craig Otis, https://stackoverflow.com/questions/840088/how-to-load-xml-file-contents-using-javascript
 var xmlHTTP = new XMLHttpRequest();
 try {
@@ -38,7 +38,7 @@ try {
 
 xmlStorage = xmlHTTP.responseText;
 alert(xmLStorage);
-
+*/
 $(document).ready(function(){
 
 	
