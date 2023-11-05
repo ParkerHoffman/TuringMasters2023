@@ -67,19 +67,22 @@
 				
 				</style>
 
-				<button class="powerButton" onclick="toggleButton(this)"></button>
+				<button class="powerButton" id="onOffButton"></button>
 				
+				<div class="hide">
+				<input type="radio" id="onRadio" value=true onclick="toggleRadio(this)">
+				<label for="onRadio">On</label>
+				</div>
+				<div class="hide">
+				<input type="radio" id="offRadio" value=true onclick="toggleRadio(this)">
+				<label for="offRadio">Off</label>
+				</div>
 				<script>
 				
-				function toggleButton(e) {
-					
-					if (e.classList.contains('on')) {
-						e.classList.remove('on');
-						console.log("Functional!! Turned off");
-					} else {
-						e.classList.add('on');
-						console.log("Functional!! Turned on");
-					}
+				function toggleRadio(e){
+					console.log(e.value);
+					reverse = e.value;
+					e.value = !reverse;
 				}
 
 				</script>

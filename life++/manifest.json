@@ -26,7 +26,6 @@
     "show_matches": ["*://*.mozilla.org/*", "*://*.wikipedia.org/*", "*://cofo.edu/*"]
   },
 
-
   "permissions": [
     "storage"
   ],
@@ -40,6 +39,6 @@
     "gecko": {
       "id": "lifePlusPlus@nothing.com"
     }
- }
+  }
 
 }

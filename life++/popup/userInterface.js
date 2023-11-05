@@ -1,34 +1,62 @@
 // Insert vars
 var switchToggle = false;
 var tabToggle = false;
+/*
+function toggleButton(e) {
+					
+	if (e.classList.contains('on')) {
+		e.classList.remove('on');
+		console.log("Functional!! Turned off");
+	} else {
+		e.classList.add('on');
+		console.log("Functional!! Turned on");
+	}
+}
 
+
+async function testpull() {
+	let onBool = await window.storage.sync.get('buttonOn');
+	console.log(onBool);
+}
+
+async function testpush(bool) {
+	await window.storage.sync.set({
+		buttonOn: bool
+	});
+}
+*/
+//credit to Craig Otis, https://stackoverflow.com/questions/840088/how-to-load-xml-file-contents-using-javascript
+var xmlHTTP = new XMLHttpRequest();
+try {
+    xmlHTTP.open("GET", "storage.xml", false);
+    xmlHTTP.send(null);
+} catch (e) {
+    window.alert("Unable to load the requested file.");
+    //    return;
+}
+
+xmlStorage = xmlHTTP.responseText;
+alert(xmLStorage);
 
 $(document).ready(function(){
-/*
-	async function testpull() {
-		let onBool = await browser.storage.sync.get('buttonOn');
-		console.log(onBool);
-	}
 
-	async function testpush(bool) {
-		await browser.storage.sync.set({
-			buttonOn: bool
-		});
-	}
-	*/
+	
 	
 	//Click Listener
 	
-	$('body').on('click', '.active', (e) => {
+	$('#onOffButton').on('click', (e) => {
 		
 		
 		if(switchToggle){
-			$('.onButton').addClass('active');
-			$('.offButton').removeClass('active');
+			$('#onOffButton').addClass('on');
+			$('#onOffButton').removeClass('off');
+			//$('#onOffButton').addClass('active');
 			testpush(true);
 		} else{
-			$('.onButton').removeClass('active');
-			$('.offButton').addClass('active');
+			$('#onOffButton').addClass('off');
+			$('#onOffButton').removeClass('on');
+		//	$('.onButton').removeClass('active');
+		//	$('.offButton').addClass('active');
 			testpush(false);
 		}
 		
